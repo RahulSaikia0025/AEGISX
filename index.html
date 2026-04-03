@@ -1,40 +1,219 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>AEGIS-X | AI Cybersecurity & Zero Trust Security Solutions India</title>
-<meta name="keywords" content="cybersecurity India, zero trust security, AI security system, device protection, AegisX">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/mobile.css">
-<link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AEGIS-X | AI Cybersecurity & Zero Trust Solutions India</title>
+
+  <meta name="description" content="AEGIS-X provides AI-powered cybersecurity, zero trust architecture, and advanced device protection systems for modern businesses in India.">
+  <meta name="robots" content="index, follow">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid rgba(255,215,0,0.2);
+    }
+
+    .logo {
+      color: gold;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    /* GOLD LINE EFFECT (same style, toned) */
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 600px;
+      background: linear-gradient(to bottom, rgba(255,215,0,0.25), transparent);
+      filter: blur(50px);
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: clamp(18px, 4vw, 26px);
+      margin: 15px 0;
+      color: #ccc;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* CTA BUTTON */
+    .cta-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, gold, orange);
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(255,215,0,0.3);
+      transition: 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #aaa;
+    }
+
+    /* FADE SCROLL */
+    .fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* STAGGER */
+    .fade:nth-child(1) { transition-delay: 0.1s; }
+    .fade:nth-child(2) { transition-delay: 0.3s; }
+    .fade:nth-child(3) { transition-delay: 0.5s; }
+    .fade:nth-child(4) { transition-delay: 0.7s; }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      header {
+        padding: 12px 15px;
+      }
+
+      .hero {
+        padding: 60px 15px;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+
+  </style>
 </head>
-<body class="page-home">
 
-<nav>
-  <a class="brand-link" href="index.html#home" aria-label="Go to the AEGIS-X home page">
-    <img class="brand-mark" src="assets/images/logo.png" alt="AEGIS-X logo">
-    <span class="brand-name">AEGIS-X</span>
-  </a>
-  <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <div class="nav-links">
-    <a href="index.html#home">Home</a>
-    <a href="about.html#about">About</a>
-    <a href="why.html#why">Why</a>
-    <a href="roadmap.html#roadmap">Roadmap</a>
-    <a href="join.html#join">Join</a>
-    <a href="transparency.html#transparency">Transparency</a>
-    <a href="contact.html#contact">Contact</a>
-  </div>
-</nav>
+<body>
 
-<section class="hero" id="home">
-  <h1 class="gradient fade">AEGIS-X</h1>
-  <p class="fade">
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">AEGIS-X</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <h1 class="fade">
+      Advanced Cybersecurity & Zero Trust Solutions
+    </h1>
+
+    <h2 class="fade">AI-Powered Device Protection</h2>
+    <h2 class="fade">Secure Communication Systems</h2>
+    <h2 class="fade">Next-Generation Cyber Defense</h2>
+
+    <a href="mailto:rahulsaikia4582@gmail.com?subject=AEGIS Inquiry&body=Hello AEGIS Team,%0A%0AName:%0AEmail:%0AProject Details:%0A"
+       class="cta-btn fade">
+       🚀 Start a Secure Project
+    </a>
+
+  </section>
+
+  <!-- INFO -->
+  <section class="fade">
+    <h2>Cybersecurity Built for the Future</h2>
+    <p>
+      AEGIS-X is an advanced cybersecurity platform designed to protect devices,
+      networks, and communication systems using zero trust architecture and
+      AI-powered threat detection.
+    </p>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="fade">
+    <p>
+      Based in India, AEGIS-X delivers cutting-edge cybersecurity solutions
+      for startups, enterprises, and modern digital infrastructure.
+    </p>
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    const elements = document.querySelectorAll('.fade');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>  <p class="fade">
     Advanced Encryption Guardian Intelligence System for connected environments
     where trust must be earned, verified, and continuously enforced.
   </p>
