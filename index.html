@@ -1,109 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <title>AEGIS-X | AI Cybersecurity & Zero Trust Security Solutions India</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AEGIS-X | AI Cybersecurity & Zero Trust Solutions India</title>
-
-  <meta name="description" content="AEGIS-X provides AI-powered cybersecurity, zero trust architecture, and advanced device protection systems for modern businesses in India.">
+  <meta name="description" content="AEGIS-X is an AI-powered cybersecurity platform focused on zero trust architecture, device protection, and secure communication systems in India.">
+  <meta name="keywords" content="cybersecurity India, zero trust security, AI security system, device protection, AegisX">
   <meta name="robots" content="index, follow">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+<body class="page-home">
 
-    body {
-      background: #000;
-      color: #fff;
-      overflow-x: hidden;
-    }
+<nav>
+  <a class="brand-link" href="#home">
+    <img class="brand-mark" src="assets/images/logo.png" alt="AEGIS-X logo">
+    <span class="brand-name">AEGIS-X</span>
+  </a>
 
-    /* NAVBAR */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      border-bottom: 1px solid rgba(255,215,0,0.2);
-    }
+  <button class="nav-toggle" type="button">
+    <span></span><span></span><span></span>
+  </button>
 
-    .logo {
-      color: gold;
-      font-weight: 700;
-      font-size: 20px;
-      letter-spacing: 2px;
-    }
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="why.html">Why</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="join.html">Join</a>
+    <a href="transparency.html">Transparency</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
 
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      position: relative;
-    }
+<section class="hero container" id="home">
 
-    /* GOLD LINE EFFECT (same style, toned) */
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 160px;
-      height: 600px;
-      background: linear-gradient(to bottom, rgba(255,215,0,0.25), transparent);
-      filter: blur(50px);
-      opacity: 0.5;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 0;
-    }
+  <h1 class="gradient fade">AEGIS-X</h1>
 
-    .hero h1 {
-      font-size: clamp(28px, 6vw, 48px);
-      line-height: 1.2;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
-    }
+  <p class="fade">
+    Advanced Encryption Guardian Intelligence System for connected environments
+    where trust must be earned, verified, and continuously enforced.
+  </p>
 
-    .hero h2 {
-      font-size: clamp(18px, 4vw, 26px);
-      margin: 15px 0;
-      color: #ccc;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* CTA BUTTON */
-    .cta-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, gold, orange);
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 20px rgba(255,215,0,0.3);
-      transition: 0.3s;
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta-btn:hover {
-      transform: scale(1.05);
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
+  <p class="fade">
+    Built as an early-stage security platform, AEGIS-X explores how zero-trust
+    controls, resilient device identity, and encrypted telemetry can work
+    together in      margin: auto;
     }
 
     section h2 {
