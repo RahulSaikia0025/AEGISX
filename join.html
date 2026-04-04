@@ -73,11 +73,12 @@
       to help create a serious security product from the ground up.
     </p>
   </div>
-  <form>
-    <input placeholder="Name" required>
-    <input placeholder="Email" required>
-    <textarea placeholder="Message"></textarea>
-    <button>Submit</button>
+  <form id="join-form">
+    <input id="name" name="name" type="text" placeholder="Name" autocomplete="name" required>
+    <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+    <textarea id="message" name="message" placeholder="Message" required></textarea>
+    <button type="submit">Submit</button>
+    <p id="form-status" aria-live="polite"></p>
   </form>
 </div>
 
