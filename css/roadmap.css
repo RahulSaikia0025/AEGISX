@@ -1,6 +1,0 @@
-
-.progress-container{height:6px;background:#333;}
-.progress-bar{height:6px;background:linear-gradient(90deg,red,gold,#1e3a8a);width:0;}
-.timeline{margin-top:20px;}
-.step{margin:15px 0;padding:10px;background:#111;border-radius:8px;}
-.page-roadmap .container{backdrop-filter:blur(1px);}

@@ -1,5 +1,0 @@
-
-.hero{min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:18px;padding:72px 24px;text-align:center;}
-.hero p{max-width:760px;margin:0;}
-.gradient{background:linear-gradient(90deg,red,gold,#1e3a8a,black);-webkit-background-clip:text;color:transparent;font-size:60px;}
-.page-home .hero{backdrop-filter:blur(2px);}
