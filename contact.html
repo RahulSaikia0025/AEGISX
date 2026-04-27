@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔍 SEO -->
   <title>Request Access | Neurotex Labs</title>
   <meta name="description" content="Request access to Neurotex Labs systems and AEGIS-X deployment.">
+  <meta name="robots" content="index, follow">
+
+  <!-- 🌐 Open Graph -->
+  <meta property="og:title" content="Neurotex Labs | Access Request">
+  <meta property="og:description" content="Submit a request to access AEGIS-X adaptive intelligence system.">
+  <meta property="og:image" content="https://aegisx.vercel.app/assets/images/preview.png">
+  <meta property="og:url" content="https://aegisx.vercel.app/contact.html">
+  <meta property="og:type" content="website">
+
+  <!-- 🐦 Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Neurotex Labs | Request Access">
+  <meta name="twitter:description" content="Apply for access to AEGIS-X intelligence system.">
+  <meta name="twitter:image" content="https://aegisx.vercel.app/assets/images/preview.png">
+
+  <!-- 🖼 Favicon -->
+  <link rel="icon" href="assets/images/favicon.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -43,17 +62,17 @@
   <div class="glass">
     <h2>Access Request Form</h2>
 
-    <form style="margin-top:20px; display:flex; flex-direction:column; gap:15px;">
+    <form id="contactForm" style="margin-top:20px; display:flex; flex-direction:column; gap:15px;">
 
-      <input type="text" placeholder="Full Name" required style="padding:12px; border:none; border-radius:5px;">
+      <input type="text" name="name" placeholder="Full Name" required style="padding:12px; border:none; border-radius:5px;">
       
-      <input type="email" placeholder="Email Address" required style="padding:12px; border:none; border-radius:5px;">
+      <input type="email" name="email" placeholder="Email Address" required style="padding:12px; border:none; border-radius:5px;">
       
-      <input type="text" placeholder="Organization / Project" style="padding:12px; border:none; border-radius:5px;">
+      <input type="text" name="organization" placeholder="Organization / Project" style="padding:12px; border:none; border-radius:5px;">
       
-      <textarea placeholder="Purpose of Access" rows="4" style="padding:12px; border:none; border-radius:5px;"></textarea>
+      <textarea name="message" placeholder="Purpose of Access" rows="4" style="padding:12px; border:none; border-radius:5px;"></textarea>
 
-      <button class="btn">Submit Request</button>
+      <button class="btn" id="submitBtn">Submit Request</button>
 
     </form>
   </div>
@@ -74,6 +93,42 @@
 <div class="footer">
   © 2026 Neurotex Labs — Secure Access Channel
 </div>
+
+<!-- ⚙️ Form Script -->
+<script>
+const form = document.getElementById("contactForm");
+const btn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  btn.innerText = "Sending...";
+  btn.disabled = true;
+
+  const data = Object.fromEntries(new FormData(form).entries());
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    alert(result.message);
+    form.reset();
+
+  } catch (err) {
+    alert("Something went wrong. Try again.");
+  }
+
+  btn.innerText = "Submit Request";
+  btn.disabled = false;
+});
+</script>
 
 </body>
 </html>

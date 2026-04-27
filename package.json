@@ -1,0 +1,24 @@
+{
+  "name": "aegisx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulSaikia0025/AEGISX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RahulSaikia0025/AEGISX/issues"
+  },
+  "homepage": "https://github.com/RahulSaikia0025/AEGISX#readme",
+  "dependencies": {
+    "nodemailer": "^8.0.7"
+  }
+}
